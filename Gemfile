@@ -11,6 +11,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt'
+gem 'faker'
 
 group :development, :test do
   gem 'capybara'
