@@ -31,7 +31,7 @@ class User < ApplicationRecord
   # remembers a user in the database for use in persistent sessions.
   def remember
   	self.remember_token = User.new_token
-  	update_attribute(:remember_digest, User.digest(remember_token))
+  	update_attribute(:password_digest, User.digest(remember_token))
   end
 
   # return true if the given token matches the digest
@@ -43,7 +43,7 @@ class User < ApplicationRecord
 
   # Forgets a user. 
   def forget
-  	update_attribute(:remember_digest, nil)
+  	update_attribute(:password_digest, nil)
   end
   # Activates an account
   def activate
