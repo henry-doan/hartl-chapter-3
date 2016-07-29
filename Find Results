@@ -1,0 +1,15 @@
+Searching 565 files for "fill_in"
+
+/Users/Henry/Desktop/Design&Development/DEVpointlabs/Act-alikes/hartl-chapter-3/app/controllers/users_controller.rb:
+    5  
+    6    def index
+    7:     @users = User.where(activated: true).paginate(page: params[:page], per_page: 10)
+    8    end
+    9  
+   10    def show
+   11    	@user = User.find(params[:id])
+   12:     redirect_to root_path and return unless FILL_IN
+   13    end
+   14  	
+
+2 matches in 1 file

@@ -1,5 +1,5 @@
 Rails.application.configure do
-  # TODO Add the session if the app is going to be in production
+  # TODO Add the session of the mailer and the password reset if the app is going to be in production
   
   # Settings specified here will take precedence over those in config/application.rb.
 
